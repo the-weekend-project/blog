@@ -1,0 +1,8 @@
+dispatch:
+  # Frontend module serves all static resources.
+  - url: "*"
+    module: default
+
+  # API module supplies the data needed by the frontend.
+  - url: "*/api/*"
+    module: api
